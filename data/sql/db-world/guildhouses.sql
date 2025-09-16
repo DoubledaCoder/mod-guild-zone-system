@@ -1,16 +1,17 @@
 -- The example of the creature --
 DELETE FROM `creature_template` WHERE `entry`=55005;
 INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `speed_swim`, `speed_flight`, `detection_range`, `scale`, `rank`, `dmgschool`, `DamageModifier`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `ExperienceModifier`, `RacialLeader`, `movementId`, `RegenHealth`, `mechanic_immune_mask`, `spell_school_immune_mask`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES 
-(55005, 0, 0, 0, 0, 0, 'Guild House', 'AzerothCore', NULL, 0, 80, 80, 0, 35, 1, 1, 1.14286, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 2, 0, 2048, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 50, 50, 1, 1, 0, 0, 1, 0, 0, 0, 'guildmaster', 12340);
+(55005, 0, 0, 0, 0, 0, 'Estate Agent', 'Steamwheedle Capital', NULL, 0, 80, 80, 0, 35, 1, 1, 1.14286, 1, 1, 20, 1, 0, 0, 1, 2000, 2000, 1, 1, 2, 0, 2048, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 1, 50, 50, 1, 1, 0, 0, 1, 0, 0, 0, 'guildmaster', 12340);
 
 -- NPC MODEL
 DELETE FROM `creature_template_model` WHERE `CreatureID` = 55005;
 INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`) VALUES
-(55005, 0, 1525, 1, 1, 0);
+(55005, 0, 19343, 1, 1, 12340);
 
 -- All creatures for guild houses --
 DELETE FROM `creature` WHERE id1=55005;
 INSERT INTO `creature` (`guid`, `id1`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES 
+(3111430, 55005, 1, 17, 392, 1, 1, 0, -1054.9481, -3668.4517, 23.885614, 6.07581, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3110568, 55005, 1, 0, 0, 1, 1, 0, 16227.5, 16399.3, -64.3789, 4.68485, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3110802, 55005, 1, 0, 0, 1, 1, 0, 16231.4, 16397.4, -64.3789, 0.182949, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3111008, 55005, 1, 0, 0, 1, 1, 0, 16217.2, 16266, 13.3868, 0, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
