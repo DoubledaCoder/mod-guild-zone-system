@@ -11,6 +11,7 @@ INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`,
 -- All creatures for guild houses --
 DELETE FROM `creature` WHERE id1=55005;
 INSERT INTO `creature` (`guid`, `id1`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES 
+(3111437, 55005, 1, 15,4010, 1, 1, 1,-4629.398,-3168.6099,41.18863, 4.7473006, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3111436, 55005, 571, 67,4418, 1, 1, 1,6133.5083,-1091.7006,402.5884, 2.1991422, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3111435, 55005, 530, 3523, 3712, 1, 1, 1, 3067.5693,3711.2764,142.4787,4.36934, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
 (3111434, 55005, 1, 440, 976, 1, 1, 1, -7151.307,-3851.5763,8.783546,1.930348, 300, 0, 0, 213700, 199700, 0, 0, 0, 0, '', 0),
